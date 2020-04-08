@@ -1,0 +1,28 @@
+body{
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    background: #feb545;
+    /*justify-content: space-between;*/
+    justify-content: space-around;
+    align-items: center; 
+}
+.card{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+}
+.card-item{
+    background: url('https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+    width: 400px;
+    height: 400px;
+    /* transform: rotateY(60deg); */
+    transition: transform 0.3s;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
